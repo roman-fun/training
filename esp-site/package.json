@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "webpack",
-    "start": "npm run build && start dist/index.html"
+    "start": "npm run build && start dist/index.html",
+    "serve": "webpack serve"
   },
   "author": "",
   "license": "ISC",
