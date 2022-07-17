@@ -6,3 +6,4 @@ let strip = new DiodeStrip(64);
 let container = div('container', [strip.root]);
 
 document.body.appendChild(container);   
+document.body.appendChild(strip.thumbRoot);   

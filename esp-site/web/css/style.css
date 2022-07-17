@@ -33,9 +33,9 @@ body {
     overflow-y: scroll;
     display: flex;
     height: 100vh;
-    justify-content: center;
     padding: 54px;
     box-sizing: border-box;
+    padding-bottom: 400px;
 }
 
 .clearfix::after {
@@ -92,4 +92,20 @@ a {
 
 a:hover {
     color: rgb(215, 215, 215);
+}
+
+.diode-strip-thumb {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.diode-thumb {
+  width:10px;
+  height: 10px;
+    flex-grow: 1;
 }
