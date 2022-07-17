@@ -38,12 +38,6 @@ body {
     padding-bottom: 400px;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .diode label input {
     position: absolute;
     visibility: hidden;
@@ -61,14 +55,13 @@ body {
     z-index: 2;
 }
 
-
 .diode::after {
     content: " ";
     background-color: inherit;
     position: absolute;
-    inset: -13px;
+    inset: -37px;
     z-index: 0;
-    filter: blur(22px);
+    filter: blur(22px) opacity(0.5);
     border-radius: 50%;
 }
 
@@ -107,5 +100,5 @@ a:hover {
 .diode-thumb {
   width:10px;
   height: 10px;
-    flex-grow: 1;
+  flex-grow: 1;
 }

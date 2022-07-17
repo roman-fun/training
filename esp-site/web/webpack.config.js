@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.ts',
     devServer: {
         port: 3000,
@@ -16,7 +16,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "public/index.html",
+            title: 'RGB',
             hash: true, // Cache busting
             filename: '../dist/index.html'
         })
