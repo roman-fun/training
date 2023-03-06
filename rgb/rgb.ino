@@ -10,7 +10,8 @@ void setup() {
   strip.clear();
   for (int i = 0; i < NUMPIXELS; i++) {
     int c = map(i, 0, NUMPIXELS - 1, 0, 255);
-    strip.setPixelColor(i, strip.Color(255 - c, 0, c));
+    strip.setPixelColor(i, strip.Color(0+c , 255, 0));
+    //strip.setPixelColor(i, strip.Color(255 - c, 0, c));
   }
   strip.show();
 }
